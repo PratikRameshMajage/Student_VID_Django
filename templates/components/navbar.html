@@ -1,0 +1,15 @@
+{% block navbar %}
+<nav
+  class="w-full h-[10%] px-[30px] flex justify-between items-center bg-[#DCDCDC]"
+>
+  <div class="logo text-xl font-semibold hover:scale-105  ">
+    <a href="/">StudentVID</a>
+  </div>
+  <div class="navcomponents text-[15px] flex gap-[20px]">
+    <a class="hover:scale-105" href="/">Home</a>
+    <a class="hover:scale-105" href="{% url 'about' %}">About</a>
+    <a class="hover:scale-105" href="{% url 'contact' %}">Contact</a>
+    <a class="hover:scale-105" href="{% url 'signup' %}">Sign up</a>
+  </div>
+</nav>
+{% endblock %}
