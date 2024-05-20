@@ -7,9 +7,11 @@
   </div>
   <div class="navcomponents text-[15px] flex gap-[20px]">
     <a class="hover:scale-105" href="/">Home</a>
+    <a class="hover:scale-105" href="{% url 'student' %}">Student Info</a>
     <a class="hover:scale-105" href="{% url 'about' %}">About</a>
     <a class="hover:scale-105" href="{% url 'contact' %}">Contact</a>
-    <a class="hover:scale-105" href="{% url 'signup' %}">Sign up</a>
+    <a class="hover:scale-105" href="{% url 'signup' %}">Sign Up</a>
+    <a class="hover:scale-105" href="{% url 'signin' %}">Sign In</a>
   </div>
 </nav>
 {% endblock %}

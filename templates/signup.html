@@ -1,10 +1,24 @@
-{% extends 'base.html' %}
-
-{% block title %}Sign Up{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} 
+{% block title %}Sign Up{% endblock %} {% block content %}
 <div class="container w-full h-[85%] flex flex-col justify-center items-center">
-    <h1 class="text-3xl font-bold mb-4">Sign Up Us</h1>
-    <p class="text-lg mb-4">This is our Sign Up page content.</p>
+    <div class="w-1/4 h-3/4 bg-[#dcdcdc] rounded-md ">
+        <form class="container w-full h-full flex flex-col justify-center items-center" action="">
+          <label class="m-3 text-lg" for="name">Name:</label>
+          <input class="border-none focus:ring-transparent" type="text" id="name" name="name " />
+          <label class="m-3 text-lg" for="email">Email:</label>
+          <input class="border-none focus:ring-transparent" type="email" id="email" name="email" />
+          <label class="m-3 text-lg" for="password">Password:</label>
+          <input class="border-none focus:ring-transparent" type="password" id="password" name="password" />
+          <div class="flex gap-7 m-5">
+              <input class="w-20 px-3 py-1 text-zinc-50 bg-zinc-950 rounded-lg" type="submit" value="Sign Up" />
+              <a class="w-20 px-3 py-3 text-zinc-50 bg-zinc-950 rounded-lg text-center" href="{% url 'signin' %}">
+                <h1>
+                    Sign In
+                </h1>
+            </a>
+          </div>
+        </form>
+
+    </div>
 </div>
 {% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Student{% endblock %}
+
+{% block content %}
+<div class="mainsection w-full h-[85%] flex justify-center items-center bg-[url('https://plus.unsplash.com/premium_photo-1683141310906-d46dad20b78e?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover">
+<div class=" w-full h-[85%] flex flex-col justify-center items-center">
+    <div class="pictureandname py-2 flex justify-center items-center gap-3 bottom-1 border-b-2">
+        <div class="picture w-12 h-12 rounded bg-[url(https://images.unsplash.com/photo-1512310604669-443f26c35f52?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center bg-cover"></div>
+        <a href="{% url "card" %}">            
+            <p class="name text-2xl text-rose-950 ">
+                Nupur Gupte
+            </p>
+        </a>    
+    </div>
+</div>
+</div>
+{% endblock %}

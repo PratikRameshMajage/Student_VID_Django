@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block title %}Sign In{% endblock %} {% block content %}
+<div class="container w-full h-[85%] flex flex-col justify-center items-center">
+    <div class="w-1/4 h-3/4 bg-[#dcdcdc] rounded-md ">
+        <form class="container w-full h-full flex flex-col justify-center items-center gap-y-2.5" action="">
+          <label class="m-3 text-lg" for="email">Email:</label>
+          <input class="border-none focus:ring-transparent" type="email" id="email" name="email" />
+          <label class="m-3 text-lg" for="password">Password:</label>
+          <input class="border-none focus:ring-transparent" type="password" id="password" name="password" />
+          <input class="w-20 my-5 px-3 py-3 text-zinc-50 bg-zinc-950 rounded-lg" type="submit" value="Sign Ip" />
+        </form>
+    </div>
+</div>
+{% endblock %}
