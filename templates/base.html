@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %} | StudentVID</title>
     {% tailwind_css %}
+
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+<link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
 </head>
 <body class="w-full h-screen font-[monospace]">
     {% include 'components/navbar.html' %}
